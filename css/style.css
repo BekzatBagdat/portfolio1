@@ -112,12 +112,12 @@ body {
 /*=============== Hero Section ==========*/
 .hero_section {
   margin-top: 120px;
+  padding: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .hero_txt {
-  margin: 5%;
   font-family: Chivo;
 }
 .hero_txt h1 {
@@ -174,6 +174,9 @@ body {
   margin-top: 120px;
   margin-bottom: 120px;
   padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .about_section h3 {
   color: #003584;
@@ -210,4 +213,24 @@ body {
   .about_img {
     width: 480px;
   }
+}
+
+/*********Projects Section********/
+.projects-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.projects_section h5 {
+  color: #003584;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.68px;
+  margin-bottom: 20px;
+  padding-left: 5%;
 }
