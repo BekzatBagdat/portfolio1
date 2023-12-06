@@ -117,9 +117,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-.hero_txt {
-  font-family: Chivo;
-}
 .hero_txt h1 {
   color: #01001e;
   font-size: 2.5rem;
@@ -135,6 +132,11 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.skills_container {
+  display: flex;
+  align-items: row;
+  justify-content: flex-start;
+}
 .skills_container h2 {
   margin-top: 20px;
   color: #01001e;
@@ -147,7 +149,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 .skill_icons {
   width: 60px;
@@ -204,15 +206,6 @@ body {
   line-height: normal;
 
   margin-bottom: 20px;
-}
-
-@media (max-width: 480px) {
-  .hero_img {
-    width: 480px;
-  }
-  .about_img {
-    width: 480px;
-  }
 }
 
 /*********Projects Section********/
@@ -308,4 +301,617 @@ footer a {
   margin-bottom: 20px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+/**********480px*******/
+@media screen and (min-width: 480px) {
+  .hero_section {
+    margin-top: 120px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero_img {
+    width: 480px;
+  }
+  .hero_txt h1 {
+    color: #01001e;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .hero_txt p {
+    color: #01001e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .skills_container {
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+  }
+  .skills_container h2 {
+    margin-top: 20px;
+    color: #01001e;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .skill_icon_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .skill_icons {
+    width: 60px;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact_container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .contact_container img {
+    width: 30px;
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  /**********About Section**************/
+  .about_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about_img {
+    width: 480px;
+  }
+  .about_section h3 {
+    color: #003584;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+  }
+  .about_txt h4 {
+    color: #01001e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+  .about_txt p {
+    color: #01001e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: light;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  /*********Projects Section********/
+  .projects_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projects_section h5 {
+    color: #003584;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+  }
+  .projects_img {
+    width: 100%;
+    height: 310px;
+    object-fit: contain;
+  }
+  .projects_txt h6 {
+    color: #01001e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .projects_txt p {
+    color: #01001e;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .github {
+    color: #006c84;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .demo {
+    color: #840000;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+
+  .projects_content {
+    margin-bottom: 120px;
+  }
+
+  /*******Footer******/
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer a {
+    color: #000351;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+/**********793px*******/
+@media screen and (min-width: 792px) {
+  .hero_section {
+    margin-top: 120px;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero_img {
+    width: 480px;
+  }
+  .hero_txt h1 {
+    color: #01001e;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .hero_txt p {
+    color: #01001e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .skills_container {
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+  }
+  .skills_container h2 {
+    margin-top: 20px;
+    color: #01001e;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .skill_icon_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .skill_icons {
+    width: 60px;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact_container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .contact_container img {
+    width: 30px;
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  /**********About Section**************/
+  .about_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about_img {
+    width: 480px;
+  }
+  .about_section h3 {
+    color: #003584;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+  }
+  .about_txt h4 {
+    color: #01001e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+  .about_txt p {
+    color: #01001e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: light;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  /*********Projects Section********/
+  .projects_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projects_section h5 {
+    color: #003584;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+  }
+  .projects_img {
+    width: 100%;
+    height: 310px;
+    object-fit: contain;
+  }
+  .projects_txt h6 {
+    color: #01001e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .projects_txt p {
+    color: #01001e;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .github {
+    color: #006c84;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .demo {
+    color: #840000;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+
+  .projects_content {
+    margin-bottom: 120px;
+  }
+
+  /*******Footer******/
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer a {
+    color: #000351;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+/**********1200px*******/
+@media screen and (min-width: 1200px) {
+  .hero_section {
+    margin-top: 120px;
+    padding: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero_img {
+    width: 480px;
+  }
+  .hero_txt h1 {
+    color: #01001e;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .hero_txt p {
+    color: #01001e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .skills_container {
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+  }
+  .skills_container h2 {
+    margin-top: 20px;
+    color: #01001e;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .skill_icon_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .skill_icons {
+    width: 60px;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact_container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .contact_container img {
+    width: 30px;
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  /**********About Section**************/
+  .about_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about_img {
+    width: 480px;
+  }
+  .about_section h3 {
+    color: #003584;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+  }
+  .about_txt h4 {
+    color: #01001e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+  .about_txt p {
+    color: #01001e;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: light;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  /*********Projects Section********/
+  .projects_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projects_section h5 {
+    color: #003584;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+  }
+  .projects_img {
+    width: 100%;
+    height: 310px;
+    object-fit: contain;
+  }
+  .projects_txt h6 {
+    color: #01001e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .projects_txt p {
+    color: #01001e;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .github {
+    color: #006c84;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .demo {
+    color: #840000;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+
+  .projects_content {
+    margin-bottom: 120px;
+  }
+
+  /*******Footer******/
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer a {
+    color: #000351;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 }
