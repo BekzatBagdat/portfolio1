@@ -131,10 +131,10 @@ body {
   line-height: normal;
 }
 .hero_txt h2 {
+  margin-top: 5%;
   color: #01001e;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 20px;
 }
