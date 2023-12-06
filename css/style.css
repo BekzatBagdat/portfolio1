@@ -150,8 +150,22 @@ body {
   align-items: flex-start;
 }
 .skill_icons {
-  width: 50px;
+  width: 60px;
   user-select: none;
   margin: 0;
   padding: 0;
+}
+
+.contact_container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.contact_container img {
+  width: 30px;
+  margin-right: 12px;
+  margin-left: 12px;
+  cursor: pointer;
 }
