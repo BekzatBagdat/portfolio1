@@ -1,5 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
 body {
   color: #01001e;
+  background-color: #ffffff;
   font-family: Chivo;
 }
 
@@ -130,11 +136,23 @@ body {
   font-weight: lighter;
   line-height: normal;
 }
-.hero_txt h2 {
+.skills_container h2 {
   margin-top: 20px;
   color: #01001e;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.skill_icon_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.skill_icon_container img {
+  width: 50px;
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+  padding: 0;
 }
